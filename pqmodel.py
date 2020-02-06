@@ -12,6 +12,7 @@ import numpy as np
 def pqmodel(num_samples=10, samp_freq=16000, fund_freq=50, num_cycles=10, amplitude=1):
     '''
     This is a python wrapper for function found in pqmodel.m
+    (See https://data.mendeley.com/datasets/6kmkk9bjdx/1)
     Returns the matlab matrix as a numpy array.
     See that function for detailed documentation about its inner workings, but
     I'll copy the details about input and ouput here:
