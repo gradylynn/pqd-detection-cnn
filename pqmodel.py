@@ -6,9 +6,7 @@ import matlab.engine
 import pandas as pd
 import numpy as np
 
-# python wrapper for function found in pqmodel.m
-# see that function for detailed documentation about its inner workings
-# returns
+
 def pqmodel(num_samples=10, samp_freq=16000, fund_freq=50, num_cycles=10, amplitude=1):
     '''
     This is a python wrapper for function found in pqmodel.m
@@ -37,6 +35,7 @@ def pqmodel(num_samples=10, samp_freq=16000, fund_freq=50, num_cycles=10, amplit
     # Converting to floats because matlab doesn't like the ints.
     samples = eng.pqmodel(float(num_samples), float(samp_freq), float(fund_freq), float(num_cycles), float(amplitude))
     return np.asarray(samples)
+
 
 def pqmodel_df(num_samples=10, samp_freq=16000, fund_freq=50, num_cycles=10, amplitude=1):
     '''
