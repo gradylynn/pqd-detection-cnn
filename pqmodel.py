@@ -38,6 +38,7 @@ def pqmodel(num_samples=10, samp_freq=16000, fund_freq=50, num_cycles=10, amplit
     samples = eng.pqmodel(float(num_samples), float(samp_freq), float(fund_freq), float(num_cycles), float(amplitude))
     return np.asarray(samples)
 
+
 def pqmodel_df(num_samples=10, samp_freq=16000, fund_freq=50, num_cycles=10, amplitude=1):
     '''
     This function returns the output of the above function to a pandas DataFrame.
