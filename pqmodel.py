@@ -6,9 +6,7 @@ import matlab.engine
 import pandas as pd
 import numpy as np
 
-# python wrapper for function found in pqmodel.m
-# see that function for detailed documentation about its inner workings
-# returns
+
 def pqmodel(num_samples=10, samp_freq=16000, fund_freq=50, num_cycles=10, amplitude=1):
     '''
     This is a python wrapper for function found in pqmodel.m
