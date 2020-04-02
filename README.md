@@ -9,3 +9,10 @@ Some of the starting places for our research are papers listed below:
 - R.Igual, C.Medrano, F.J.Arcega, G.Mantescu, "Integral mathematical model of power quality disturbances"
 
 The pqmodel.m was found [here](https://data.mendeley.com/datasets/6kmkk9bjdx/1) and is used to simulate different classes of power quality disturbances used for training our model.
+
+
+## Data Generation
+We use simulated data to train our CNN. We follow the parameters for data gereration outlined by R. Igual in "Integral mathematical model of power quality disturbances". This paper outlines parameters for generating samples of normal sine waves along with abnormal sine waves and provides a matlab script under the GNU General Public License that we use to generate wave-sample data.
+
+## CNN Design
+We implement a CNN structure using tensorflow.keras in python. 
